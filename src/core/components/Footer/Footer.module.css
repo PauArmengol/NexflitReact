@@ -1,0 +1,141 @@
+.container {
+    position: relative;
+    border-bottom: none;
+    padding: 70px 45px 0 45px;
+    color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans', sans-serif;
+  }
+  
+  .footer_wrapper {
+    margin-top: 0;
+    min-width: 190px;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 13px;
+    margin: 0 0 14px;
+    color: #757575;
+    position: relative;
+  }
+  
+  .footer {
+    padding-top: 0;
+    margin: 0 auto;
+    width: 90%;
+    text-align: left;
+  }
+
+  .sociallinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0 0 14px;
+  }
+  
+  .icon {
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 25px;
+  }
+  
+  .text_top {
+    padding: 0;
+    margin: 0 0 30px;
+  }
+  
+  .text_top a {
+    color: #757575;
+    text-decoration: none;
+  }
+  
+  .text_top a:hover {
+    text-decoration: underline;
+  }
+  
+  .links {
+    padding: 0;
+    margin: 0;
+    max-width: 1000px;
+    font-size: 13px;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    list-style: none;
+    margin-left: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 25%;
+    padding-right: 12px;
+    vertical-align: top;
+    font-size: 13px;
+  }
+  
+  .item a {
+    color: #757575;
+    text-decoration: none;
+  }
+  
+  .item a:hover {
+    text-decoration: underline;
+  }
+  
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  background: rgba(0,0,0,.4);
+  border: 1px solid #aaa;
+  font-size: 1em;
+  padding: 3px;
+  position: relative; 
+  border-radius: 2px;
+  color: #757575;
+}
+.globe {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  font-size: 16px;
+  color: #999;
+}
+  
+.language select {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 12px;
+  color: #999;
+}
+  
+  .language select:focus-visible {
+    outline: none;
+  }
+  
+  .language select option {
+    background: #aaa;
+  }
+  
+  .footer_country {
+    font-size: 13px;
+    margin-top: 24px;
+  }
+  
+  @media only screen and (max-width: 996px) {
+    .container {
+      padding: 70px 15px 0 15px;
+    }
+    .item {
+      width: 50%;
+    }
+  }

@@ -1,0 +1,31 @@
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.item-navbar {
+    display: block;
+    list-style-type: none;
+    margin-left: 18px;
+}
+
+.item-navbar a {
+    text-decoration: none;
+    align-items: center;
+    color: #e5e5e5;
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition: color .4s;
+    font-weight: 500;
+    font-size: .9rem;
+    
+}

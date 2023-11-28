@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 100;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 300;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 400;
+  font-display: optional;
+  src: url(./assets//fonts/NetflixSans_W_Rg.woff2) format('woff2'),url(./assets/fonts/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 700;
+  font-display: optional;
+  src: url(./assets//fonts/NetflixSans_W_Md.woff2) format('woff2'),url(./assets/fonts/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 800;
+  font-display: optional;
+  src: url(./assets//fonts/NetflixSans_W_Bd.woff2) format('woff2'),url(./assets/fonts/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  font-weight: 900;
+  font-display: optional;
+  src: url(./assets/fonts/NetflixSans_W_Blk.woff2) format('woff2'),url(./assets/fonts/NetflixSans_W_Blk.woff) format('woff')
+} 
+
+:root {
+    line-height: 1.5;
+    color-scheme: light dark;
+    
+    background-color: #141414;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --logo-red: #e50914;
+    --text-white: #e5e5e5;  
+    --strong-gray: #535150;
+    --light-gray: #5b5b5b;
+  }
+
+*, *::before, *::after {
+  box-sizing: border-box; 
+  padding: 0; 
+  margin: 0; 
+}
+
+* {
+  letter-spacing: 0! important;
+}
+  
+html, body {
+    font-family: Netflix Sans, sans-serif;
+    color: #E5E5E5;
+
+}
+
+
