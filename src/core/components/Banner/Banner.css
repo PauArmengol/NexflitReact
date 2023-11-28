@@ -48,13 +48,22 @@
     border: none;
 }
 
+.banner-button-play:hover {
+    background-color: #ffffffab;
+}
+
 .banner-button-mylist {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(109, 109, 110);
+    background-color: rgba(109, 109, 110, 0.76);
     width: 9em;
+    color: #FFF;
+}
+
+.banner-button-mylist:hover {
+    background-color: rgba(109, 109, 110, 0.473);
 }
 
 .icon-play {

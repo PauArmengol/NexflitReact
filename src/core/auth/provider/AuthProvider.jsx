@@ -7,7 +7,7 @@ export const AUTH_KEY = "isLoggedIn";
 
 export const AuthProvider = ({ children }) => {
 
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
     const saveLoginState = async (state) => AppStorage.save(AUTH_KEY, state);

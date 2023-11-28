@@ -4,15 +4,7 @@ import PublicRoute from "../auth/components/PublicRoute"
 import Home from "../../features/Home/Home"
 import Login from "../../features/Login/Login"
 
-export const AppRouter = createBrowserRouter([
-    {
-        path: "/",
-        element: (
-            <PrivateRoute>
-                <Home />
-            </PrivateRoute>
-        )
-    }, 
+export const appRouter = createBrowserRouter([
     {
         path: "/login",
         element: (
@@ -21,4 +13,13 @@ export const AppRouter = createBrowserRouter([
             </PublicRoute>
         )
     }, 
+    {
+        path: "/",
+        element: (
+            <PrivateRoute>
+                <Home />
+            </PrivateRoute>
+        )
+    }, 
+   
 ])

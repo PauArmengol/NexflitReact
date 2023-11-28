@@ -1,5 +1,5 @@
 import './App.css'
-import { AppRouter } from "./core/routes/appRouter"
+import { appRouter } from "./core/routes/appRouter"
 import { RouterProvider } from 'react-router-dom'
 import RootProvider from "./core/providers/RootProvider"
 
@@ -8,21 +8,14 @@ import { register as registerSwiper } from 'swiper/element/bundle';
 import 'swiper/swiper-bundle.css';
 registerSwiper();
 
-
-
-
 const App = () => {
 
     return (
 
-           <>
-           
                 <RootProvider>
-                    <RouterProvider router={AppRouter}/>
+                    <RouterProvider router={appRouter}/>
                 </RootProvider>  
            
-           </> 
-        
     )
 }
 

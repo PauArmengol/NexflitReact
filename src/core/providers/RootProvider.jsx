@@ -5,16 +5,8 @@ const RootProvider = ({ children }) => {
 
     return (
 
-        <AuthProvider
-            fallback={
-                <div>
-                    <h1>Cargando...</h1>
-                </div>
-            }
-        
-        >
+        <AuthProvider>
             {children}
-            
         </AuthProvider>
     )
 }
