@@ -19,8 +19,8 @@
   justify-content: center;
   align-items: center; 
   background-color: #000000cc;
-  width: 450px;
-  height: 500px;
+  width: 430px;
+  height: 470px;
   border-radius: 3px;
   color: #fff;
   text-align: center;
@@ -28,6 +28,7 @@
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+  margin-top: 25px
 }
 
 .form-login {

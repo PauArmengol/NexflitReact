@@ -4,15 +4,20 @@ const SwiperSlide = ({children, ...props}) => {
 
     return (
 
-        <div className='swiper-slide'>
+        <div className='container'>
 
-            <swiper-slide  {...props}>
-            
-                    {children}
-                    
-                
-                
-            </swiper-slide>
+            <div className='swiper-slide'>
+                <swiper-slide  
+                    {...props}
+                    style={{
+                        width: '100%',
+                        height: "auto",
+                        display: "block"
+                    }}
+                >
+                            {children}
+                </swiper-slide>
+            </div>
 
         </div>
     )

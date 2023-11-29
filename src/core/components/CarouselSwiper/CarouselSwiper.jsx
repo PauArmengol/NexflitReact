@@ -18,6 +18,7 @@ export const CarouselSwiper = ({ children }) => {
               navigation="true"
           >
               { children }
+              
           </swiper-container>
 
       </div>

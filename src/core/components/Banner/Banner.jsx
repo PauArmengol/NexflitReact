@@ -34,10 +34,10 @@ const Banner = () => {
 
         <header
                 className='banner'
-                    style={{
-                        backgroundSize: "cover",
-                        backgroundImage: `url("${TMDB_PATHS.images.backdrop.url}${TMDB_PATHS.images.backdrop.sizes.w1280}${randomMovie?.backdrop_path || ''}")`,
-                        backgroundPosition: "center center",
+                style={{
+                    backgroundSize: "cover",
+                    backgroundImage: `url("${TMDB_PATHS.images.backdrop.url}${TMDB_PATHS.images.backdrop.sizes.w1280}${randomMovie?.backdrop_path || ''}")`,
+                    backgroundPosition: "center center",
                     }}>
                 <div className='banner-content'>
                     <h1 className='banner-title'>
@@ -61,8 +61,6 @@ const Banner = () => {
                         <p className='icon-age'>16+</p>
                     </div>
                 </div>
-                
-                {/* <div className='banner--fadeBottom'></div> */}
         </header>
 
     )
