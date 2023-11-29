@@ -2,6 +2,8 @@ import './SecondNavbar.css'
 import { MdOutlineSearch } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa6";
 import avatar  from '../../../assets/images/Netflix-avatar.png'
+import Logout from '../../../features/Logout/Logout';
+
 
 const SecondNavbar = () => {
 
@@ -38,14 +40,18 @@ const SecondNavbar = () => {
             <div className='second-navbar-element'>
                 <div className='account-menu-item'>
                     <div className='account-dropdown-button'>
-                        <a href='#' role='button'>
-                            <span className='profile-link'>
-                                <img className='profile-icon' src={avatar}
+                        <span className='profile-link'>
+                            <img 
+                                className='profile-icon' 
+                                src={avatar}
                                 alt='profile-image' />
-                            </span>
-                        </a>
+                        </span>
                     </div>
                 </div>
+            </div>
+
+            <div>
+                <Logout/>
             </div>
             
         </div>

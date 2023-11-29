@@ -45,20 +45,21 @@ const Login = () => {
                     className="form-login"
                     onSubmit={handleSubmit}
                     >
-                        <h1 className="h1-login">Iniciar Sesión</h1>
-                        <input type="email" name="email" className="input"/>
-                        <input type="password" name="password" className="input"/>
-
-                        <button type="submit" className="button-submit">Iniciar Sesión</button>
-
+                        <h1 className="h1-login">Log In</h1>
+                        <input type="email" name="email" className="input" placeholder="Email..."/>
+                        <input type="password" name="password" className="input"placeholder="Password..."/>
+                        <button type="submit" className="button-submit">Log In</button>
                 </form>
 
-                <div>
-                    <input type="checkbox"/>
-                    <p>Recordarme</p>
-                </div>
-                <div>
-                    <p>¿Necesitás ayuda?</p>
+                <div className="section-footer-login">
+                    <div className="login-checkbox">
+                        <input type="checkbox"/>
+                        <p>Remember Me</p>
+                    </div>
+                    
+                    <div>
+                        <a href="#">Do you need help?</a>
+                    </div>
                 </div>
             </div>
     
