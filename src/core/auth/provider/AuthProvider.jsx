@@ -9,13 +9,13 @@ export const AuthProvider = ({ children }) => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     const saveLoginState = async (state) => AppStorage.save(AUTH_KEY, state);
     const getLoginState = async () => AppStorage.get(AUTH_KEY);
     const removeLoginState = async () => AppStorage.remove(AUTH_KEY);
 
     useEffect(() => {
-
         const initAuth = async () => {
             try {
             const loginState = await getLoginState();
@@ -33,15 +33,12 @@ export const AuthProvider = ({ children }) => {
     const login = async (email, password) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;
-
         if((!emailRegex.test(email)) || (!passwordRegex.test(password))) {
-            console.log("Invalid email or password");
+            setError("Invalid email or password");
             return;
         } 
-
         setIsLoggedIn(true);
         saveLoginState(true);
-        
     };
 
     const logout = async () => {
@@ -76,9 +73,23 @@ export const AuthProvider = ({ children }) => {
             value={{
                 isLoggedIn,
                 login,
-                logout
+                logout,
+                error
             }}
         >
+            <div> 
+                {error && <p 
+                    style={{ 
+                        color: "red",
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "center",
+                        alignContent: "center",
+                        fontSize: "24px"
+                    
+                    }}>{error}</p>}
+            </div>
+
             {children}
 
         </AuthContext.Provider>
