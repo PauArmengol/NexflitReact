@@ -29,8 +29,8 @@ const CarouselSection = ({ title, data }) => {
                 { data?.map((e) => (
                         <SwiperSlide 
                             key={e.id}
-                            /* onMouseEnter={() => handleSlideEnter(e)}
-                            onMouseLeave={handleSlideLeave} */
+                            onMouseEnter={() => handleSlideEnter(e)}
+                            onMouseLeave={handleSlideLeave} 
                             >
                             <div
                                 className={`slide-content ${activeSlide === e ? 'active' : ''}`}

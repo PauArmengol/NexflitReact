@@ -31,8 +31,17 @@ export const AuthProvider = ({ children }) => {
     }, []);
 
     const login = async (email, password) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;
+
+        if(!emailRegex.test(email) || !passwordRegex.test(password)) {
+            console.error("Invalid email or password");
+            return;
+        } 
+        
         setIsLoggedIn(true);
         saveLoginState(true);
+        
     };
 
     const logout = async () => {
