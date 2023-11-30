@@ -1,31 +1,41 @@
+import { useState } from "react";
 import { CarouselSwiper } from "../CarouselSwiper/CarouselSwiper"
 import SwiperSlide from "../CarouselSwiper/components/SwiperSlide"
 import CarouselTitle from "../CarouselTitle/CarouselTitle"
-import './CarouselSection.css'
+//import './CarouselSection.css'
 import { GoPlay } from "react-icons/go"
 import { GrAddCircle } from "react-icons/gr";
 import { SlLike } from "react-icons/sl";
 
 const CarouselSection = ({ title, data }) => {
 
+    const [activeSlide, setActiveSlide] = useState(null);
+
+    const handleSlideEnter = (index) => {
+    setActiveSlide(index);
+    };
+
+    const handleSlideLeave = () => {
+        setActiveSlide(null);
+    };
+
     return (
         <>
         
             <CarouselTitle>{title}</CarouselTitle>
 
-            <CarouselSwiper 
-                className="container"
-            >
+            <CarouselSwiper>
                 
                 { data?.map((e) => (
-
                         <SwiperSlide 
                             key={e.id}
+                            /* onMouseEnter={() => handleSlideEnter(e)}
+                            onMouseLeave={handleSlideLeave} */
                             >
                             <div
-                                className="box"
+                                className={`slide-content ${activeSlide === e ? 'active' : ''}`}
                                 style={{
-                                    aspectRatio: '16/9',
+                                    aspectRatio: '16/9', 
                                     backgroundImage: `url(${e.backdrop})`,
                                     backgroundSize: 'contain',
                                     backgroundRepeat:' no-repeat',
@@ -33,14 +43,16 @@ const CarouselSection = ({ title, data }) => {
                                     width: "250px",  
                                 }}
                             >
-                                <div className="description">
+                                 <h4>{e.title}</h4>
+                                 
+                                {/* <div className="description">
                                     <p>descripcion pelicula</p>
-                                    <GoPlay />
-                                    <GrAddCircle />
-                                    <SlLike />
+                                    <GoPlay className="description-icon"/>
+                                    <GrAddCircle className="description-icon"/>
+                                    <SlLike className="description-icon"/>
                                     
-                                </div>
-                                <h4>{e.title}</h4> 
+                                </div> */}
+                                
                             </div>                            
 
                         </SwiperSlide>

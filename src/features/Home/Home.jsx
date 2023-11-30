@@ -2,18 +2,15 @@ import { CarouselSwiper } from "../../core/components/CarouselSwiper/CarouselSwi
 import SwiperSlide from "../../core/components/CarouselSwiper/components/SwiperSlide"
 import Header from "../../core/components/Header/Header"
 import Footer from "../../core/components/Footer/Footer"
-
 import useSWR from "swr"
 import { getNowPlayingMovies, getPopularMovies, getTopRatedMovies, getUpcomingMovies } from "./services/movies.services"
 import CarouselSection from "../../core/components/CarouselSection/CarouselSection"
 import { getPopularTv, getTopRatedTv } from "./services/tv.services"
 import Banner from "../../core/components/Banner/Banner"
 
-
 const Home = () => {
 
     // MOVIES
-
     const { 
         data : popularMovies, 
         error: popularMoviesError, 
@@ -40,7 +37,6 @@ const Home = () => {
 
 
     // TV
-
     const { 
         data: popularTv, 
         error: popularTvError,
@@ -59,7 +55,6 @@ const Home = () => {
             <Header />
 
             <Banner />
-            
         
             <CarouselSection 
                 data={popularMovies}
@@ -91,9 +86,7 @@ const Home = () => {
                 title={"Top Rated TV Shows"}
             />
         
-
             <Footer />
-
         </>
     )
 }
