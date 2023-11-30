@@ -31,9 +31,3 @@ de Codo a Codo 4.0.
 # INSTRUCCIONES DE EJECUCIÓN:
 - npm run dev
 
-
-Contiene:
-
-- Proceso de Auntenticación 
-- Peticiones a la API de TMDB con Axios
-- 
