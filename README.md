@@ -12,6 +12,7 @@ de Codo a Codo 4.0.
 # Obligatorio:
 - React
 - Consumir API de TMDB
+- Implementar useState y useEffect
 - La aplicación debe contar con mínimo 2 vistas principales.
 - Proporcionar funcionalidades para buscar y ver detalles de películas y series.
 - Crear UI atractiva y funcional.
@@ -30,4 +31,3 @@ de Codo a Codo 4.0.
 
 # INSTRUCCIONES DE EJECUCIÓN:
 - npm run dev
-
