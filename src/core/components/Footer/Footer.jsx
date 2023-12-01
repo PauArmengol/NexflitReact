@@ -48,7 +48,7 @@ const Footer = () => {
                   </select>
                 </div>
 
-                <p className={styles.footer_country}> 2023 Nexflit, Inc.</p>
+                <p className={styles.footer_country}> 2023 -  Developed by Paula Armengol</p>
             </div>
 
           </div>

@@ -3,6 +3,7 @@ import { MdOutlineSearch } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa6";
 import avatar  from '../../../assets/images/Netflix-avatar.png'
 import Logout from '../../../features/Logout/Logout';
+import SearchBar from './SearchBar/SearchBar';
 
 
 const SecondNavbar = () => {
@@ -11,15 +12,7 @@ const SecondNavbar = () => {
         
         <div className='container-second-navbar'>
 
-            <div className='second-navbar-element'>
-                <div className='searchBox'>
-                    <button className='searchTab'>
-                        <MdOutlineSearch 
-                            className='icon-search'
-                        />
-                    </button>
-                </div>
-            </div>
+            <SearchBar />
 
             <div className='second-navbar-element'>
                 <div className='kids'>
@@ -37,6 +30,8 @@ const SecondNavbar = () => {
                 </span>
             </div>
 
+            
+
             <div className='second-navbar-element'>
                 <div className='account-menu-item'>
                     <div className='account-dropdown-button'>
@@ -48,7 +43,7 @@ const SecondNavbar = () => {
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> 
 
             <div>
                 <Logout/>

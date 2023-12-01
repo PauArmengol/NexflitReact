@@ -77,18 +77,6 @@ export const AuthProvider = ({ children }) => {
                 error
             }}
         >
-            <div> 
-                {error && <p 
-                    style={{ 
-                        color: "red",
-                        display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "center",
-                        alignContent: "center",
-                        fontSize: "24px"
-                    
-                    }}>{error}</p>}
-            </div>
 
             {children}
 
